@@ -1,7 +1,5 @@
 package pet.store.entity;
 
-import java.util.HashSet;
-import java.util.Set;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,13 +14,17 @@ import lombok.ToString;
 @Entity
 @Data
 public class Employee {
+
 	@Id
-	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long employeeId;
+	
 	private String employeeFirstName;
 	private String employeeLastName;
-	private Long employeePhone;
+	private String employeePhone;
 	private String employeeJobTitle;
+	
+	
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
