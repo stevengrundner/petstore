@@ -22,9 +22,7 @@ public class Employee {
 	private String employeeLastName;
 	private String employeePhone;
 	private String employeeJobTitle;
-	
-	
-	
+
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToOne(cascade = CascadeType.ALL)

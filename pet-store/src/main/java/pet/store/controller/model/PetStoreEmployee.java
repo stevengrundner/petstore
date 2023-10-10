@@ -17,9 +17,9 @@ public class PetStoreEmployee {
 	public PetStoreEmployee(Employee employee) {
 		employeeId = employee.getEmployeeId();
 		employeeFirstName = employee.getEmployeeFirstName();
-		employeeFirstName = employee.getEmployeeLastName();
+		employeeLastName = employee.getEmployeeLastName();
 		employeePhone = employee.getEmployeePhone();
-		employeeJobTitle = getEmployeeJobTitle();
+		employeeJobTitle = employee.getEmployeeJobTitle();
 
 	}
 }
